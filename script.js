@@ -30,10 +30,10 @@
 
   /* ---------- Constants ---------- */
   const TYPING_TITLES = [
-    'Video Producer',
     'Video Editor',
-    'Voice Over Artist',
+    'Short-Form Video Editor',
     'Content Creator',
+    'Voice Over Artist',
   ];
 
   const THEME_KEY = 'portfolio-theme';
@@ -301,6 +301,7 @@
 
   /* ---------- Testimonials Slider ---------- */
   function initTestimonials() {
+    if (!DOM.testimonialsTrack) return;
     const cards = DOM.testimonialsTrack.querySelectorAll('.testimonial-card');
     let currentIndex = 0;
     let autoSlideTimer = null;
@@ -381,7 +382,7 @@
         `Name: ${name}\nEmail: ${email}\n\n${message}`
       );
       const mailSubject = encodeURIComponent(subject);
-      window.location.href = `mailto:Mohamed.yehia5526@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+      window.location.href = `mailto:Mohamedyehia2655@gmail.com?subject=${mailSubject}&body=${mailBody}`;
 
       DOM.formStatus.textContent = 'Thank you! Your email client should open shortly.';
       DOM.formStatus.style.color = '';
