@@ -1701,3 +1701,14 @@ body:hover .mouse-glow {
     transform: none;
   }
 }
+
+.form-note { font-size: 0.8rem; opacity: 0.7; margin-top: 0.75rem; text-align: center; }
+/* Mobile: keep the contact email on one line when it fits */
+@media (max-width: 480px) {
+  .contact__link-value { font-size: 0.8rem; word-break: normal; overflow-wrap: anywhere; }
+}
+
+/* Mobile: avoid scroll-hint overlapping hero buttons on small screens */
+@media (max-width: 480px) {
+  .home__scroll { display: none; }
+}
